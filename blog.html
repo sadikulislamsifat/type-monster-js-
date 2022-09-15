@@ -15,14 +15,13 @@
             <div class="accordion-item">
               <h2 class="accordion-header" id="panelsStayOpen-headingOne">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                    1. What is Difference between var , let and const  in JavaScript?
-                </button>
+                    1. What is Local Storage And Session Storage ? </button>
               </h2>
               <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse bg-primary text-white" aria-labelledby="panelsStayOpen-headingOne">
                 <div class="accordion-body">
-                 <p>   1.var: The var keyword declares a function-scoped or global variable. Function-scoped means that the variable is only available within the function it was declared in. Global variables are available throughout your entire code . </p>
-                    <p>2.let: The let keyword declares a block-scoped local variable.Block-scoped means that the variable is only available within the block it was declared in</p>
-                    <p>3.The const keyword declares a block-scoped.a variable that can't be reassigned Constants are also called “immutable variables”, but that's a bit of a misnomer since they are actually variables - just ones that can't be reassigned.</p>
+                 <p> 1. This read-only interface property provides access to the Document’s local storage object, the stored data is stored across browser sessions. Similar to sessionStorage, except that localStorage data gets cleared when the page session ends – that is when the page is closed. It is cleared when the last “private” tab of a browser is closed (localStorage data for a document loaded in a private browsing or incognito session). </p>
+                    <p>2.Session Storage objects can be accessed using the sessionStorage read-only property. The difference between sessionStorage and localStorage is that localStorage data does not expire, whereas sessionStorage data is cleared when the page session ends.</p>
+                   
 
                 </div>
               </div>
@@ -30,42 +29,45 @@
             <div class="accordion-item">
               <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                  2. What is Difference between arrow function and normal function ?
+                  2. What is Global Scope and Block Scope ?
 
                 </button>
               </h2>
               <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse bg-primary text-white" aria-labelledby="panelsStayOpen-headingTwo">
                 <div class="accordion-body">
-                  <p>1.Unlike regular functions, arrow functions do not have their own this. The value of this inside an arrow function remains the same throughout the lifecycle of the function and is always bound to the value of this in the closest non-arrow parent function.</p>
-                  <p>2.Regular functions created using function declarations or expressions are constructible and callable. Since regular functions are constructible, they can be called using the new keyword. However, the arrow functions are only callable and not constructible, i.e arrow functions can never be used as constructor functions. Hence, they can never be invoked with the new keyword.</p>
+                  <p>1.Global scope — Global scope contains all of the things defined outside of all code blocks. A code block simply consists of grouped statements inside curly braces ({ }). if statement, loops, function are examples of structure that create a code block. A global variable has global scope. A global variable is accessible from anywhere in the code.</p>
+                  <p>2.Global scope contains things defined inside code blocks. A local variable has Global scope. A local variable is only accessible where it's declared.</p>
                 </div>
               </div>
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header" id="panelsStayOpen-headingThree">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                  3. What is Difference between map, foreach, find, filter?
+                  3.How Event Loop Work ?
                 </button>
               </h2>
               <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse bg-primary text-white" aria-labelledby="panelsStayOpen-headingThree">
                 <div class="accordion-body">
-                  <p>1. Map executes the same code on every element in an array and returns a new array with the updated elements.</p>
-                  <p>2. ForEach is used to execute the same code on every element in an array but does not change the array and it returns undefined</p>
-                  <p>3.Filter checks every element in an array to see if it meets a certain criteria and returns a new array with the elements that return truthy for the criteria.</p>
-                  <p>4.find When you want to select a single element from an array.</p>
+                  <p>The Event Loop has one simple job — to monitor the Call Stack and the Callback Queue. If the Call Stack is empty, the Event Loop will take the first event from the queue and will push it to the Call Stack, which effectively runs it. Such an iteration is called a tick in the Event Loop. Each event is just a function callback.</p>
+                  
                 </div>
               </div>
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header" id="panelsStayOpen-headingFour">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
-                 4. Why we use template string in JavaScript?
+                 4. How Much time i got undifine?
                 </button>
               </h2>
               <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse bg-primary text-white" aria-labelledby="panelsStayOpen-headingFour">
                 <div class="accordion-body">
-                  <p>1. Template literals provide an easy way to interpolate variables and expressions into strings. The method is called string interpolation.</p>
-                  
+                  <p>1.function Will no return.</p>
+                  <p>2.Perameter that is not passed will be undifine</p>
+                  <p>3.if return has nothing on the right side will return undifine</p>
+                  <p>4.property that doesn't exists on an object will give you undifine</p>
+                  <p>5.accessing array elemnets outside of the index range</p>
+                  <p>6.Deleting an element inside an array</p>
+                  <p>7.set value directly to undifine</p>
                 </div>
               </div>
             </div>
