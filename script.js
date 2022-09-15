@@ -121,6 +121,7 @@ const start = () => {
       clearInterval(startCountdown);
       startTime = new Date().getTime();
     }
+    // console.log(count)
     count--;
   }, 1000);
 };
@@ -128,7 +129,7 @@ const start = () => {
 // START Countdown
 startBtn.addEventListener("click", start);
 
-console.log(startBtn)
+// console.log(startBtn)
 // console.log(start)
 // If history exists, show it
 displayHistory();
