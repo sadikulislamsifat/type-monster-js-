@@ -15,7 +15,21 @@ body {
   width: 70%;
   margin: 0 auto;
 }
-
+.title-btn{
+  display: flex;
+  flex-direction: column;
+}
+.blog-item{
+  width: 75%;
+  margin: auto;
+  margin-top: 50px;
+}
+.modal-btn button{
+  margin-top: 40px;
+}
+.modal-btn p{
+  margin-top: 10px;
+}
 #question {
   height: 100px;
   display: flex;
@@ -102,6 +116,7 @@ body {
   margin: 20px 0;
 }
 
+
 .divider-container {
   height: 80px;
   display: flex;
@@ -110,7 +125,11 @@ body {
   gap: 15px;
   margin: 0 auto;
 }
-
+.blog-item{
+  width: 75%;
+  margin: auto;
+  margin-top: 50px;
+}
 .line {
   height: 2px;
   background: white;
@@ -120,6 +139,15 @@ body {
 .title2 {
   color: white;
   display: block;
+}
+button a{
+  text-decoration: none;
+  color: #fff;
+}
+.btn{
+  text-decoration: none;
+  color: white;
+  text-align: center;
 }
 
 .buttons {
